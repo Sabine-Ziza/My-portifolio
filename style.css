@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: cadetblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: cadetblue;
+}
+
+
+/* Profile */
+#profile {
+    padding: 50px 20px;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.profile-content img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-content h1 {
+    font-size: 35px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-content h2 {
+    color: cadetblue;
+}
+
+.profile-content h3 {
+    color: #deb887;
+}
+
+.profile-content p {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.profile-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-icons i {
+    font-size: 25px;
+}
+
+
+/* About */
+#about {
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about h2,
+#skills h2,
+#projects h2 {
+    color: cadetblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+/* Skills */
+#skills {
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    width: 250px;
+    background: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px gray;
+    transition: 0.3s;
+}
+
+.skill-card:hover,
+.projects-card:hover {
+    transform: translateY(-8px);
+    opacity: 0.9;
+    box-shadow: 0 8px 20px gray;
+}
+
+.skill-card i {
+    font-size: 35px;
+    color: cadetblue;
+}
+
+.skill-card h3 {
+    margin: 10px 0;
+}
+
+.skill-card p {
+    font-size: 14px;
+}
+
+
+/* Projects */
+#projects {
+    padding: 30px 20px;
+}
+#projects i{
+    padding: 30px 20px;
+    color: rgb(107, 13, 107);
+}
+#projects h2 {
+    color:rgb(58, 35, 6);
+}
+
+.projects-allcards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.projects-card {
+    width: 800px;
+    max-width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 10px gray;
+    border-radius: 30px;
+    text-align: left;
+    transition: 0.3s;
+    
+}
+
+.projects-card h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects-card p {
+    margin-left: 10px;
+    line-height: 1.5;
+}
+
+.projects-card i {
+    font-size: 30px;
+    color: rgb(119, 101, 88);
+}
+
+
+/* Contact */
+#contact {
+    padding: 30px 20px;
+}
+
+#contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    color: rgb(6, 82, 85);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contact-info i {
+    font-size: 20px;
+    color:rgb(133, 60, 7);
+}
+
+#contact form {
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#contact button {
+    padding: 12px;
+    background: #deb887;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    opacity: 0.9;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .profile-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-icons {
+        justify-content: center;
+    }
+
+    .projects-card {
+        width: 90%;
+    }
+
+}
+
+
+/* Phone */
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    #profile {
+        padding: 20px;
+    }
+
+    .profile-content img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-content h1 {
+        font-size: 28px;
+    }
+
+    .profile-content p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 90%;
+    }
+
+    .projects-card {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    #contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
